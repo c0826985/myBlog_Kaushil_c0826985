@@ -82,7 +82,7 @@ body {
 }
 
 .list li {
-	color: rgb(214, 94, 94);
+	color: rgb(118, 115, 115);
 	text-decoration: underline;
 	font-weight: bold;
 	font-size: 13px;
@@ -105,7 +105,7 @@ body {
 }
 
 .navbtn {
-	background-color: rgb(214, 94, 94);
+	background-color: rgb(0, 0, 0);
 	border-radius: 3em;
 	list-style-type: none;
 	margin: 0.3em;
@@ -222,7 +222,7 @@ footer a {
 		font-weight: bold;
 	}
 	.list li {
-		color: rgb(214, 94, 94);
+		color: rgb(105, 105, 105);
 		text-decoration: underline;
 		font-weight: bold;
 		font-size: 15px;
@@ -252,8 +252,14 @@ footer a {
 		
 	} */
 
-	th,
+	th{
+		border: 0.1em solid #000000;
+		padding: 1em;
+		font-size: 1.1em;
+		background-color: slategray;
+	}
 	td {
+		background-color: white;
 		border: 0.1em solid #000000;
 		padding: 1em;
 		font-size: 1.1em;
@@ -450,11 +456,12 @@ footer a {
 		font-weight: bold;
 	}
 	.list li {
-		color: rgb(214, 94, 94);
+		color: rgb(116, 116, 116);
 		text-decoration: underline;
 		font-weight: bold;
 		font-size: 18px;
 		padding-bottom: 3px;
+		
 	}
 	.footerdiv{
 		position: relative;
