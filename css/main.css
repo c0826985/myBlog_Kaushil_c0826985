@@ -4,12 +4,12 @@
 	float: left;
 	width: 100%;
 	height: 110px;
-	background-color: rgb(0, 0, 0);
-	color: rgb(214, 94, 94);
+	background-color: slategrey;
+	color: black;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	border-style: solid;
-	border-width: 5px;
-	border-color: lightgray;
+	border-width: 2px;
+	box-shadow: 3px;
 }
 
 body {
@@ -18,6 +18,8 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 100vh;
+	
 
 }
 
@@ -59,6 +61,7 @@ body {
 
 .image {
 	height: 350px;
+	width: 405px;
 }
 
 .image2 {
@@ -110,12 +113,14 @@ body {
 	float: left;
 	width: 24%;
 	border-style: solid;
+	font-style: italic;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .navbtn a {
 	color: white;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 10px;
 }
 
 .navbtn a:hover{
@@ -128,14 +133,17 @@ body {
 }
 
 .footerdiv {
-	position: relative;
+	position: sticky;
 	bottom: 0;
-	background-color: #333;
+	background-color: slategray;
 	float: left;
 	width: 100%;
 	height: 100px;
-	
+	border: solid;
+	border-width: 2px;
+	font-size: 18px;
 }
+
 .h2-string-center {
 	text-align: center;
 }
@@ -160,8 +168,6 @@ footer a {
 	margin-top: auto;
 }
 
-
-
   @media screen and (max-width: 600px) {
 .mobile-view {
 	display: inline;
@@ -172,7 +178,7 @@ footer a {
 }
 
 .navbtn a {
-	font-size: 14px;
+	font-size: 10px;
 }
 
 .navbtn {
@@ -180,31 +186,29 @@ footer a {
 }
   }
 
-/* Media Query for handling tablet view port targets screen only */
 
 @media only screen and (min-width: 685px) {
 	.mobile-view {
-		display: none;
-	}
-	/* sektop styles */
-	.desktop-view {
 		display: inline;
+	}
+	.desktop-view {
+		display: none;
 	}
 	#headerDesc {
 		margin: 75px 50px 0px 50px;
 	}
 	.headingText {
-		font-size: 35px;
+		font-size: 20px;
 	}
 	.infoBlock {
 		padding-left: 10px;
 		float: left;
 		width: 43%;
-		font-size: 18px;
+		font-size: 14px;
 	}
 	.listHeading{
 		color: #000000;
-		font-size: 25px;
+		font-size: 20px;
 		font-weight: bold;
 	}
 	.skillsBlock {
@@ -214,20 +218,39 @@ footer a {
 	}
 	.listHeading {
 		color: #000000;
-		font-size: 25px;
+		font-size: 20px;
 		font-weight: bold;
 	}
 	.list li {
 		color: rgb(214, 94, 94);
 		text-decoration: underline;
 		font-weight: bold;
-		font-size: 18px;
+		font-size: 15px;
 		padding-bottom: 3px;
 	}
-	.footerdiv{
-		position: fixed;
-		background-color: rgb(0, 0, 0);
-	}
+	
+
+}
+
+@media only screen and (min-width : 750px)
+{
+	/* table {
+		border: 1px solid #ccc;
+		border-collapse: collapse;
+		padding: 30px;
+		width: 20%;
+		table-layout: fixed;
+		font-size: 14px;
+	  } */
+
+	  /* .footerdiv {
+		position: relative;
+		bottom: 0;
+		float: left;
+		width: 100%;
+		height: 100px;
+		
+	} */
 
 	th,
 	td {
@@ -266,36 +289,8 @@ footer a {
 		letter-spacing: .1em;
 		text-transform: uppercase;
 	  }
-	
-}
-
-@media only screen and (min-width : 750px)
-{
-
-	table {
-		border: 1px solid #ccc;
-		border-collapse: collapse;
-		padding: 30px;
-		width: 20%;
-		table-layout: fixed;
-		font-size: 14px;
-	  }
-
-	  .footerdiv {
-		position: relative;
-		bottom: 0;
-		background-color: #333;
-		float: left;
-		width: 100%;
-		height: 100px;
-		
-	}
 
 }
-
-
-
-/* Media query for handling desktop width size */
 
 @media only screen and (min-width: 860px) {
 	.navbtn a {
@@ -305,57 +300,54 @@ footer a {
 		width: 31%;
 	}
 
-	table {
+	/* table {
 		border: 1px solid #ccc;
 		border-collapse: collapse;
 		padding: 30px;
 		width: 20%;
 		table-layout: fixed;
 		font-size: 14px;
-	  }
-
+	  } */
+/* 
 	  .footerdiv {
 		position: relative;
 		bottom: 0;
-		background-color: #333;
 		float: left;
 		width: 100%;
 		height: 100px;
 		
-	}	
+	}	 */
 }
 @media only screen and (min-width: 960px){
 
-	.footerdiv {
+	/* .footerdiv {
 		position: relative;
 		bottom: 0;
-		background-color: #333;
 		float: left;
 		width: 100%;
 		height: 100px;
 	
-	}
+	} */
 
 }
 
 @media only screen and (min-width : 1100px){
-	.footerdiv {
+	/* .footerdiv {
 		position: relative;
 		bottom: 0;
-		background-color: #333;
 		float: left;
 		width: 100%;
 		height: 100px;
-	}
+	} */
 
-	table {
+	/* table {
 		border: 1px solid #ccc;
 		border-collapse: collapse;
 		padding: 30px;
 		width: 20%;
 		table-layout: fixed;
 		font-size: 14px;
-	  }
+	  } */
 }
 
 
@@ -370,16 +362,28 @@ footer a {
 	text-align:center;
 	background-color: rgb(0, 0, 0);
 	} */
-
-	.footerdiv {
+	.mobile-view{
+		display: none;
+	}
+	.desktop-view{
+		display: inline;
+	}
+	/* .footerdiv {
 		position: fixed;
 		bottom: 0;
-		background-color: #333;
 		float: left;
 		width: 100%;
 		height: 100px;
-		
-	}
+	} */
+
+	.footerdiv{
+		position: relative;
+		bottom: 0;
+		background-color: slategray;
+		float: left;
+		width: 100%;
+		height: 100px;
+		}
 
 	.tableDiv{
 		margin-top: 150px;
@@ -421,6 +425,46 @@ footer a {
 		letter-spacing: .1em;
 		text-transform: uppercase;
 	  }
+	.headingText {
+		font-size: 30px;
+	}
+	.infoBlock {
+		padding-left: 10px;
+		float: left;
+		width: 43%;
+		font-size: 18px;
+	}
+	.listHeading{
+		color: #000000;
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.skillsBlock {
+		float: left;
+		margin-left: 220px;
+		width: 24%;
+	}
+	.listHeading {
+		color: #000000;
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.list li {
+		color: rgb(214, 94, 94);
+		text-decoration: underline;
+		font-weight: bold;
+		font-size: 18px;
+		padding-bottom: 3px;
+	}
+	.footerdiv{
+		position: relative;
+		bottom: 0px;
+		margin-top: auto;
+	} 
 	}
 
+
+
+
+ /* contact me */
   
