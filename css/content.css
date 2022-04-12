@@ -13,12 +13,21 @@
 }
 
 body {
-	background-image:url("../images/giphy.gif");
+	background-image:url("../images/bg.gif");
 	font-family: "Comfortaa";
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
+}
+
+.skillsBlock a{
+	color: rgb(0, 0, 0);
+	
+}
+
+ul{
+	list-style-type: none;
 }
 
 .container {
@@ -62,31 +71,29 @@ body {
 	width: 1000px;
 } */
 
-.skillsBlock {
+/* .skillsBlock {
 	margin-top: 20px;
 	margin-left: 10px;
-}
+} */
 
 .listHeading {
 	color: #000000;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: bold;
 	white-space: nowrap;
 }
 .list{
-	list-style-type: none;
+
 	margin-left: 20px;
 }
 
-ul{
-	list-style: none;
-}
 
 .list li {
 	color: rgb(0, 0, 0);
 	text-decoration: underline;
+	list-style-type: circle;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 18px;
 	padding-bottom: 3px;
 	
 }
@@ -112,11 +119,11 @@ ul{
 	margin: 0.3em;
 	padding: 0.4em;
 	float: left;
+	margin-left: 1.5em;
 	width: 24%;
 	border-style: solid;
-	font-size: 10px;
 	font-style: italic;
-	
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .navbtn a {
@@ -226,9 +233,9 @@ td {
 		font-weight: bold;
 	}
 	.skillsBlock {
-		float: left;
-		margin-left: 50px;
-		width: 24%;
+		float: right;
+		/* margin-left: 50px;
+		width: 24%; */
 	}
 	.listHeading {
 		color: #000000;
@@ -282,6 +289,23 @@ td {
 		margin-left: 680px;
 	}
 
+	.skillsBlock{
+		
+		margin-top: 1em;
+		float: left;
+		margin-left: 1em;
+		padding: 2em;
+	}
+
+	.skillsBlock li{
+		font-size: 24px;
+
+	}
+	.skillsBlock a{
+		color: rgb(0, 0, 0);
+		
+	}
+
 
 }
 
@@ -317,10 +341,6 @@ td {
     }
     
     table td::before {
-      /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
       content: attr(data-label);
       float: left;
       font-weight: bold;
@@ -330,8 +350,6 @@ td {
     table td:last-child {
       border-bottom: 0;
     }
-
-
   }
 
   /* Contact me  */
@@ -458,5 +476,6 @@ textarea{
 	.left{
 		height: 200px;
 	}
+
 }
 

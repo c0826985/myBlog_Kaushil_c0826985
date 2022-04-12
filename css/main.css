@@ -13,7 +13,7 @@
 }
 
 body {
-	background-image:url("../images/blue-white.gif");
+	background-image:url("../images/bg.gif");
 	font-family: "Comfortaa";
 	background-position: center;
 	background-repeat: no-repeat;
@@ -72,6 +72,8 @@ body {
 .skillsBlock {
 	margin-top: 20px;
 	margin-left: 10px;
+	float: right;
+	right: 0;
 }
 
 .listHeading {
@@ -82,7 +84,7 @@ body {
 }
 
 .list li {
-	color: rgb(118, 115, 115);
+	color: rgb(0, 0, 0);
 	text-decoration: underline;
 	font-weight: bold;
 	font-size: 13px;
@@ -128,8 +130,13 @@ body {
 }
 
 .infoBlock {
+	position: relative;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	padding-left: 10px;
 	font-size: 14px;
+	color:rgb(0, 0, 0);
+	
+	
 }
 
 .footerdiv {
@@ -186,7 +193,6 @@ footer a {
 }
   }
 
-
 @media only screen and (min-width: 685px) {
 	.mobile-view {
 		display: inline;
@@ -222,14 +228,13 @@ footer a {
 		font-weight: bold;
 	}
 	.list li {
-		color: rgb(105, 105, 105);
+		color: rgb(0, 0, 0);
 		text-decoration: underline;
 		font-weight: bold;
 		font-size: 15px;
 		padding-bottom: 3px;
 	}
 	
-
 }
 
 @media only screen and (min-width : 750px)
@@ -252,7 +257,7 @@ footer a {
 		
 	} */
 
-	th{
+	/* th{
 		border: 0.1em solid #000000;
 		padding: 1em;
 		font-size: 1.1em;
@@ -294,7 +299,7 @@ footer a {
 		font-size: .85em;
 		letter-spacing: .1em;
 		text-transform: uppercase;
-	  }
+	  } */
 
 }
 
@@ -391,10 +396,10 @@ footer a {
 		height: 100px;
 		}
 
-	.tableDiv{
+	/* .tableDiv{
 		margin-top: 150px;
 		display:flexbox;
-	}
+	} */
 	th,
 	td {
 		border: 0.1em solid #000000;
@@ -402,11 +407,14 @@ footer a {
 		font-size: 1.1em;
 	}
 	table {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		position: relative;
 		border: 1px solid #ccc;
 		border-collapse: collapse;
 		padding: 50px;
 		width: 100%;
 		table-layout: fixed;
+		top:100px;
 	  }
 	  
 	  table caption {
@@ -446,9 +454,10 @@ footer a {
 		font-weight: bold;
 	}
 	.skillsBlock {
-		float: left;
-		margin-left: 220px;
-		width: 24%;
+		margin-top: 20px;
+		margin-left: 10px;
+		float: right;
+		right: 0;
 	}
 	.listHeading {
 		color: #000000;
@@ -456,7 +465,7 @@ footer a {
 		font-weight: bold;
 	}
 	.list li {
-		color: rgb(116, 116, 116);
+		color: rgb(0, 0, 0);
 		text-decoration: underline;
 		font-weight: bold;
 		font-size: 18px;
@@ -465,8 +474,7 @@ footer a {
 	}
 	.footerdiv{
 		position: relative;
-		bottom: 0px;
-		margin-top: auto;
+		top: 100px;
 	} 
 	}
 
